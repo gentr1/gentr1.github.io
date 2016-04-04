@@ -895,9 +895,9 @@ d3.json("json/output5.json", function(error, world) {
 				
 				cg = svg.append("g").attr("transform","translate("+(width-50)+",55)").classed("colorbar",true);
 				//var cb = colorBar().color(d3.scale.linear().domain([range_men[0], range_men[1]]).range(["#f7fcb9", "#081d58"]).interpolate(d3.interpolateHcl)).size(350).lineWidth(40).precision(4);
-				//var range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+				//var range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 				//console.log(((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0))
-				//var range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]).interpolate(d3.interpolateHcl);
+				//var range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]);
 				
 				var range_c=d3.scale.linear().domain([parseFloat(range_women[0]),((parseFloat(range_women[1])+parseFloat(range_women[0]))/2.0), parseFloat(range_women[1])]).range(["green","#fee08b","red" ]);
 				//var range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["green","#cc99ff","red" ]);
@@ -1196,7 +1196,7 @@ d3.json("json/output5.json", function(error, world) {
 							//cb = colorBar().color(range_c).size(350).lineWidth(40).precision(4);
 							cb = colorBar().color(range_c).size(height*0.7).lineWidth(width*0.01).precision(4);
 							cg.call(cb);
-							//range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+							//range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 							//cg.call(cb);
 						}
 						else{
@@ -1208,7 +1208,7 @@ d3.json("json/output5.json", function(error, world) {
 							//cb = colorBar().color(range_c).size(350).lineWidth(40).precision(4);
 							cb = colorBar().color(range_c).size(height*0.7).lineWidth(width*0.01).precision(4);
 							cg.call(cb);
-							//range_c=d3.scale.linear().domain([range_women[0], range_women[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+							//range_c=d3.scale.linear().domain([range_women[0], range_women[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 						}
 					}
 					else{
@@ -1217,11 +1217,11 @@ d3.json("json/output5.json", function(error, world) {
 							cg.html("");
 							cg.remove();
 							cg = svg.append("g").attr("transform","translate("+(width-50)+",55)").classed("colorbar",true);
-							range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]).interpolate(d3.interpolateHcl);
+							range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]);
 							//cb = colorBar().color(range_c).size(350).lineWidth(40).precision(4);
 							cb = colorBar().color(range_c).size(height*0.7).lineWidth(width*0.01).precision(4);
 							cg.call(cb);
-							//range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+							//range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 							//cg.call(cb);
 						}
 						else{
@@ -1229,11 +1229,11 @@ d3.json("json/output5.json", function(error, world) {
 							cg.html("");
 							cg.remove();
 							cg = svg.append("g").attr("transform","translate("+(width-50)+",55)").classed("colorbar",true);
-							range_c=d3.scale.linear().domain([parseFloat(range_women[0]),((parseFloat(range_women[1])+parseFloat(range_women[0]))/2.0), parseFloat(range_women[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]).interpolate(d3.interpolateHcl);
+							range_c=d3.scale.linear().domain([parseFloat(range_women[0]),((parseFloat(range_women[1])+parseFloat(range_women[0]))/2.0), parseFloat(range_women[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]);
 							//cb = colorBar().color(range_c).size(350).lineWidth(40).precision(4);
 							cb = colorBar().color(range_c).size(height*0.7).lineWidth(width*0.01).precision(4);
 							cg.call(cb);
-							//range_c=d3.scale.linear().domain([range_women[0], range_women[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+							//range_c=d3.scale.linear().domain([range_women[0], range_women[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 						}
 					}
 					
@@ -1472,7 +1472,7 @@ d3.json("json/output5.json", function(error, world) {
 							//cb = colorBar().color(range_c).size(350).lineWidth(40).precision(4);
 							cb = colorBar().color(range_c).size(height*0.7).lineWidth(width*0.01).precision(4);
 							cg.call(cb);
-							//range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+							//range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 							//cg.call(cb);
 						}
 						else{
@@ -1484,7 +1484,7 @@ d3.json("json/output5.json", function(error, world) {
 							//cb = colorBar().color(range_c).size(350).lineWidth(40).precision(4);
 							cb = colorBar().color(range_c).size(height*0.7).lineWidth(width*0.01).precision(4);
 							cg.call(cb);
-							//range_c=d3.scale.linear().domain([range_women[0], range_women[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+							//range_c=d3.scale.linear().domain([range_women[0], range_women[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 						}
 					}
 					else{
@@ -1494,11 +1494,11 @@ d3.json("json/output5.json", function(error, world) {
 							cg.html("");
 							cg.remove();
 							cg = svg.append("g").attr("transform","translate("+(width-50)+",55)").classed("colorbar",true);
-							range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["hsl(33,87%,29%)" ,"hsl(0,0%,96%)","hsl(175,98%,20%)" ]);
+							range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["hsl(175,98%,20%)" ,"hsl(0,0%,96%)","hsl(33,87%,29%)" ]);
 							//cb = colorBar().color(range_c).size(350).lineWidth(40).precision(4);
 							cb = colorBar().color(range_c).size(height*0.7).lineWidth(width*0.01).precision(4);
 							cg.call(cb);
-							//range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+							//range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 							//cg.call(cb);
 						}
 						else{
@@ -1510,7 +1510,7 @@ d3.json("json/output5.json", function(error, world) {
 							//cb = colorBar().color(range_c).size(350).lineWidth(40).precision(4);
 							cb = colorBar().color(range_c).size(height*0.7).lineWidth(width*0.01).precision(4);
 							cg.call(cb);
-							//range_c=d3.scale.linear().domain([range_women[0], range_women[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+							//range_c=d3.scale.linear().domain([range_women[0], range_women[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 						}
 					}
 					
@@ -1813,12 +1813,12 @@ d3.json("json/output5.json", function(error, world) {
 					else {
 						if (check_g==true){
 							
-							range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]).interpolate(d3.interpolateHcl);
+							range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]);
 							
 						}
 						else{
 							
-							range_c=d3.scale.linear().domain([parseFloat(range_women[0]),((parseFloat(range_women[1])+parseFloat(range_women[0]))/2.0), parseFloat(range_women[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]).interpolate(d3.interpolateHcl);
+							range_c=d3.scale.linear().domain([parseFloat(range_women[0]),((parseFloat(range_women[1])+parseFloat(range_women[0]))/2.0), parseFloat(range_women[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]);
 							
 						}
 					}
@@ -2074,12 +2074,12 @@ d3.json("json/output5.json", function(error, world) {
 					else {
 						if (check_g==true){
 							
-							range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]).interpolate(d3.interpolateHcl);
+							range_c=d3.scale.linear().domain([parseFloat(range_men[0]),((parseFloat(range_men[1])+parseFloat(range_men[0]))/2.0), parseFloat(range_men[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]);
 							
 						}
 						else{
 							
-							range_c=d3.scale.linear().domain([parseFloat(range_women[0]),((parseFloat(range_women[1])+parseFloat(range_women[0]))/2.0), parseFloat(range_women[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]).interpolate(d3.interpolateHcl);
+							range_c=d3.scale.linear().domain([parseFloat(range_women[0]),((parseFloat(range_women[1])+parseFloat(range_women[0]))/2.0), parseFloat(range_women[1])]).range(["hsl(175,98%,20%)","hsl(0,0%,96%)","hsl(33,87%,29%)" ]);
 							
 						}
 					}
@@ -2330,7 +2330,7 @@ d3.json("json/output5.json", function(error, world) {
 							//cb = colorBar().color(range_c).size(350).lineWidth(40).precision(4);
 							cb = colorBar().color(range_c).size(height*0.7).lineWidth(width*0.01).precision(4);
 							cg.call(cb);
-							//range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+							//range_c=d3.scale.linear().domain([range_men[0], range_men[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 							//cg.call(cb);
 						}
 						else{
@@ -2342,7 +2342,7 @@ d3.json("json/output5.json", function(error, world) {
 							//cb = colorBar().color(range_c).size(350).lineWidth(40).precision(4);
 							cb = colorBar().color(range_c).size(height*0.7).lineWidth(width*0.01).precision(4);
 							cg.call(cb);
-							//range_c=d3.scale.linear().domain([range_women[0], range_women[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]).interpolate(d3.interpolateHcl);
+							//range_c=d3.scale.linear().domain([range_women[0], range_women[1]]).range(["hsl(62,100%,90%)" ,"hsl(222,30%,20%)"]);
 						}
 			}	
 			
