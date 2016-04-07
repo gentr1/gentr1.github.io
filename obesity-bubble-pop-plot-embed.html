@@ -610,17 +610,17 @@
 													
 						<div class="btn-group upward"  data-toggle="buttons" style="float:right;"> 
 							<label class="bbt2" id="c1">
-								<input type="radio" name="options2" checked> Region
-							</label>
-							<label class="bbt2" id="c2">
-								<input type="radio" name="options2"> Education
-							</label>
-							<label class="bbt2" id="c3">
-								<input type="radio" name="options2"> % living in cities
-							</label>
-							<label class="bbt2" id="c4">
-								<input type="radio" name="options2"> Per-capita GDP
-							</label>
+										<input id="r1" type="radio" name="options2" checked> Region
+									</label>
+									<label class="bbt2" id="c2">
+										<input id="r2" type="radio" name="options2"> Education
+									</label>
+									<label class="bbt2" id="c3">
+										<input id="r3" type="radio" name="options2"> % living in cities
+									</label>
+									<label class="bbt2" id="c4">
+										<input id="r4" type="radio" name="options2"> Per-capita GDP
+									</label>
 						</div>
 						</fieldset>	
 						</div>
@@ -1898,6 +1898,18 @@ d3.json("json/countries-data.json", function(error, data0) {
 				
 				$( ".bbt2" ).click(function() {
 					selectedColorMode=this.id;	
+					if (document.getElementById("r1").checked){
+						selectedColorMode="c1";
+					}
+					else if (document.getElementById("r2").checked){
+						selectedColorMode="c2";
+					}
+					else if (document.getElementById("r3").checked){
+						selectedColorMode="c3";
+					}
+					else if (document.getElementById("r4").checked){
+						selectedColorMode="c4";
+					}
 					//console.log(selectedColorMode)
 					if(selectedColorMode=="c1"){
 						circle.transition().duration(0).style("fill", function (d,i) {return map_region_color[d.region];});
